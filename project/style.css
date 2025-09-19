@@ -1,0 +1,152 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1f2833, #36454F);
+    color: #E6E8EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Main Container and its Animation */
+.cont {
+    background: #1f2833;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    text-align: center;
+    width: 90%;
+    max-width: 550px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Headings and Fonts */
+.fn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #66FCF1;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 25px;
+}
+
+/* Search Section */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#city-input {
+    flex-grow: 1;
+    padding: 12px 20px;
+    border: 2px solid #45A29E;
+    border-radius: 25px;
+    background-color: #0B0C10;
+    color: #E6E8EB;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+#city-input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(102, 252, 241, 0.7);
+    transform: scale(1.02);
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #66FCF1, #45A29E);
+    color: #0B0C10;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(102, 252, 241, 0.4);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 252, 241, 0.6);
+    background: linear-gradient(45deg, #45A29E, #66FCF1);
+}
+
+/* Loading Animation */
+#loading {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #45A29E;
+    animation: pulse 1.5s infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Weather Info Display with Animation */
+.weather-info {
+    margin-top: 25px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.weather-info.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.temp {
+    font-size: 4em;
+    font-weight: 700;
+    color: #66FCF1;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.desc {
+    text-transform: capitalize;
+    font-style: italic;
+    color: #C5C6C7;
+    margin-top: -10px;
+}
+
+/* Chart Styling and Animation */
+canvas {
+    margin-top: 30px;
+    background-color: #0B0C10;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    animation: slideInUp 1s ease-out;
+}
+
+/* Keyframe Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

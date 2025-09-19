@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=2.0">
+        <link href="style.css" rel="stylesheet">
+        <title>Dynamic Weather Application</title>
+    </head>
+    <body>
+        <main class="cont">
+            <h1 class="fn">Weather</h1>
+            <div class="search-container">
+                <label for="city-input" style="font-size: clamp(1em, 2vw, 2em); ">Location</label>
+                <input type="text" id="city-input" style="font-size: clamp(1em,1vw,1em);  " placeholder="Enter Location">
+                <button onclick="getWeather()" style="font-size: clamp(1em, 1em); ">Submit</button>
+            </div>
+            <div id="loading" class="hidden">Loading...</div>
+            <div class="weather-info" id="weather-info"></div>
+            <canvas id="forecastChart"></canvas>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
