@@ -1,4 +1,4 @@
-const apiKey = "2ec47e05681097894723219396dca517";
+const apiKey = "your_api_key";
 let forecastChart;
 
 async function getWeather() {
@@ -110,4 +110,5 @@ function createForecastChart(forecastData) {
             }
         }
     });
+
 }
