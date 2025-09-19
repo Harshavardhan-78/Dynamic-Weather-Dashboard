@@ -27,3 +27,5 @@ Enter a city name in the input box.
 Click Submit.
 
 Instantly view the current weather details and a forecast chart for upcoming days.
+
+
