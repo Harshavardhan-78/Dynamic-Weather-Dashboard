@@ -67,7 +67,7 @@ The project follows a standard file structure for a simple web application:
 ├── script.js         // Core logic, API calls, data processing, chart rendering, and decision support logic.
 └── style.css         // Styling for the application, including layout, colors, and animations.
 ```
-##✨ Future Enhancements
+## ✨ Future Enhancements
 1. **Security: Implement a server-side proxy to hide the API key.
 
 2. **Functionality: Add precipitation forecasts and UV Index reporting.
