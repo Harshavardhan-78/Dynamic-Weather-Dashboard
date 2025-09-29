@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=2.0">
+        <link href="style.css" rel="stylesheet">
+        <title>Dynamic Weather Application</title>
+    </head>
+    <body>
+        <main class="cont">
+            <h1 class="fn">Weather</h1>
+            <div class="search-container">
+                <label for="city-input" style="font-size: clamp(1em, 2vw, 2em); ">Location</label>
+                <input type="text" id="city-input" style="font-size: clamp(1em,1vw,1em);  " placeholder="Enter Location">
+                <button onclick="getWeather()" style="font-size: clamp(1em, 1em); ">Submit</button>
+            </div>
+            <div id="loading" class="hidden">Loading...</div>
+            <div class="weather-info" id="weather-info"></div>
+            <button id="farmer-support-btn" 
+                    style="
+                        display: none; 
+                        margin: 20px auto; 
+                        padding: 15px 30px; 
+                        background: linear-gradient(45deg, #28a745, #218838); /* Green gradient for farmers */
+                        color: #E6E8EB; 
+                        font-size: 1.1em;
+                        font-weight: bold;
+                        border: none;
+                        border-radius: 25px;
+                        cursor: pointer;
+                        box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+                        transition: all 0.3s ease;
+                    "
+                    onclick="openFarmerSupport()">Farmer Support</button>
+            <canvas id="forecastChart"></canvas>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
