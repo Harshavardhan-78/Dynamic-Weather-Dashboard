@@ -68,8 +68,8 @@ The project follows a standard file structure for a simple web application:
 └── style.css         // Styling for the application, including layout, colors, and animations.
 ```
 ## ✨ Future Enhancements
-1. **Security: Implement a server-side proxy to hide the API key.
+1. **Security:** Implement a server-side proxy to hide the API key.
 
-2. **Functionality: Add precipitation forecasts and UV Index reporting.
+2. **Functionality:** Add precipitation forecasts and UV Index reporting.
 
-3. **UX: Implement geolocation, search history, and temperature unit toggling.
+3. **UX:** Implement geolocation, search history, and temperature unit toggling.
